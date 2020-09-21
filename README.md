@@ -470,7 +470,17 @@ CocoaPods / Carthago / SPM > 이거 한번씩 셋업도해보래 라이브러리
 - 이미지 라이브러리 동작방식
 - alamofire, realm 등 부가 질문 생각해보기 
 
+- swift와 objective-c 의 차이
+```
+포인터의 유무, C와의 연동성, 옵셔널의 유무
+swift 없, 브릿지를 만들어야하고 옵셔널 있
+objective-c 있, 실행가능, 옵셔널 없
+```
 
+- objective-c와 objective-c++의 확장자
+```
+Objective-c는 .m Objective-c++는 .mm
+```
 <hr>
 
 - 클로저 델리게이트 사용 시에 주의할점 (강한참조)
