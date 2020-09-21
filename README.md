@@ -23,7 +23,8 @@ guard구문은 후속 코드가 실행되기전 조건을 만족하는지 확인
 1. open: 외부의 다른 모듈이 import 해서 접근 가능하다. 심지어 import하는 외부 모듈안에서 subclass와 override도 가능
 2. public: 외부 모듈이 import해서 접근 가능하지만, subclass와 override는 오로지 자신의 모듈 안에서만 가능
 3. internal: 자신의 모듈 안에서만 접근 가능하고 외부 모듈에서는 접근 불가하다. 한마디로 프로젝트 내부용이다. 
-4. fileprivate: 같은 Source file안에서만 접근 가능하다. 즉, .swift라는 파일 안에서 fileprivate인 함수가 있다면 해당 swift파일안에서는 접근이 가능하지만, 같은 프로젝트의 다른 swift 파일에서는 접근이 불가능하다.
+4. fileprivate: 같은 Source file안에서만 접근 가능하다. 
+즉, .swift라는 파일 안에서 fileprivate인 함수가 있다면 해당 swift파일안에서는 접근이 가능하지만, 같은 프로젝트의 다른 swift 파일에서는 접근이 불가능하다.
 5. private: 함수 안에서 private으로 선언된 변수는 해당 함수안에서, class안에서 private으로 선언된 변수는 해당 class 안에서만 접근이 가능하다.
 
 접근제어자를 잘 써야하는 이유
@@ -201,7 +202,14 @@ UIView와 달리 별도의 Responder 가 없어 유저 인터렉션 관련 기�
 5. App Delegate 객체를 만들고 앱 객체와 연결해 Main를 만드는 등 실행에 필요한 준비
 6. 실행 완료를 앞두고 앱 객체가 App Delegate에게 application:didFinishLaunchingWithOptions: 메시지를 보냄
 ```
+
 - 백그라운드 상태에서 코드 동작하게 하려면 어떤 함수 써야 하는지 > 이거 모르겠음 
+```
+위치정보 가져오는건 manager따로 있고 
+beginBackgroundTaskWithName쓰면 백그라운드 가도 어느정도 시간동안 작동하게 할 수있음
+
+정확한건 면접상황에서 질문이 어떤 상황인지 보고 판단하는게 맞는듯
+```
 
 <hr>
 
