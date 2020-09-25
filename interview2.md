@@ -1,3 +1,5 @@
+#  면접본 내용 
+
 1. 강한참조가 걸리는 실제 Use case > 클로저 :이를 해결하기 위한 unonwned, weak 
 
 2. Protocol, extension
